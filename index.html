@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TaskTrack – Nova Technologies</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>TaskTrack</h1>
+      <p>Nova Technologies – Task Management System</p>
+    </header>
+
+    <!-- Task Form -->
+    <div class="card">
+      <h2>Add New Task</h2>
+      <div class="form">
+        <input type="text" id="taskInput" placeholder="Enter task name" />
+        <input type="text" id="assignedTo" placeholder="Assigned to" />
+
+        <select id="department">
+          <option value="">Select Department</option>
+          <option>IT Management</option>
+          <option>HR</option>
+          <option>Operations</option>
+          <option>Finance</option>
+          <option>Support</option>
+        </select>
+
+        <button onclick="addTask()">Add Task</button>
+      </div>
+    </div>
+
+    <!-- Active Tasks -->
+    <div class="card">
+      <h2>Active Tasks</h2>
+      <ul id="taskList"></ul>
+    </div>
+
+    <!-- History -->
+    <div class="card">
+      <h2>Completed Task History</h2>
+      <ul id="historyList"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
